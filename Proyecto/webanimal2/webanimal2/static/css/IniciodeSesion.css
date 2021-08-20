@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body {
+    background-image: url('../imagen/fongo.jpg');
+}
+
+.form-register {
+    width: 400px;
+    background: #9FD5D1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; 
+    box-shadow: 8px 14px 38px #000;
+}
+
+.form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;        
+}
+
+.controls {
+    width: 95%;
+    padding: 9px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    margin: auto;
+    
+}
+
+.form-register p {
+    height: 20px;
+    text-align: center; 
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.form-register a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.form-register a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    color: black;
+    margin: 13px 0;
+    font-size: 16px;
+    box-shadow: 2px 9px 15px #000;
+    background-color: #84A3FB;
+    margin-bottom: 16px;
+}
+.menu{
+    list-style: none;
+    padding: 0px;
+    background: #9FD5D1;
+    font-family: 'calibri';
+    width: 90%;
+    max-width: 1000px;
+    margin:0.50em auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    }
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    background: #84A3FB;
+}

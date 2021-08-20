@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+body {
+    background-image: url('../images/fondo.jpg');
+}
+
+.menu{
+    list-style: none;
+    background: #9FD5D1;
+    font-family: 'calibri';
+    width: 90%;
+    max-width: 1000px;
+    margin:0.50em auto;
+    margin-top:20px; 
+}
+
+.menu li a{
+    color: white;
+    padding: 20px;
+    display: block;                 
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #84A3FB;
+}
+
+.form-donation{ 
+    background: #9FD5D1;
+    width: 850px;
+    height: 740px;   
+    margin: auto;    
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; 
+    box-shadow: 8px 14px 38px #000;
+  
+   } 
+   
+h2 {
+       position: relative; 
+       top: 20px;
+       right:0px;
+       left:300px;
+       font-size: 30px;
+   } 
+
+.controlsa {
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    font-family:'calibri';
+    font-size:20px;
+    top:-200px;
+    bottom:0px;
+    margin: 30px 30px;
+}
+
+.controlsb {
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    font-family:'calibri';
+    font-size:20px;
+    position:relative;
+    margin: 30px -20px;
+}
+
+.controlsc {
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    font-family:'calibri';
+    font-size:20px;
+    position:relative;
+    top:-55px;
+    bottom:0px;
+    margin: -21px 520px;
+}
+
+p {
+    font-size: 20px;      
+ }
+
+ .form-donation p {
+    position: relative;  
+    top: auto;
+    left: 20;
+    display:block;
+ } 
+
+.botons1 {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    found-size:50px;
+    margin:20px;
+    width:300px;
+    height:20px;
+    margin:0px auto;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    margin: 5px 20px;
+}
+
+.controls1 {
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    font-family:'calibri';
+    font-size:20px;
+    position:relative;
+    margin: -1px 20px;
+}
+
+.botons4 {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    found-size:50px;
+    margin:20px;
+    width:-5px;
+    height:5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    margin: -45px 600px;
+}
+
+.botons2 {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    found-size:50px;
+    margin:20px;
+    width:300px;
+    height:20px;
+    margin:0px auto;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    margin: 5px 20px;
+}
+
+.botons3 {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    found-size:50px;
+    margin:20px;
+    width:300px;
+    height:20px;
+    margin:0px auto;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    margin: 5px 20px;
+}
+
+.controls2 {
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width:300px;
+    height:50px;
+    border: 1px solid #000000;
+    font-family:'calibri';
+    font-size:20px;
+    position:relative;
+    margin: 5px 20px;
+}
+
+.botons5 {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    found-size:50px;
+    margin:20px;
+    width:-5px;
+    height:5px;
+    margin:0px auto;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    margin: 5px -5px;
+}
+ 
+   

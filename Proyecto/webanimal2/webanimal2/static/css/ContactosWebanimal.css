@@ -1,0 +1,136 @@
+body{
+    font-family: arial, helvetica;
+	background: #e8e8e8;
+    background-image: url('../Imagenes/fongo.jpg');
+}
+.form-register {
+    width: 600px;
+    background: #9FD5D1;
+    padding: 60px 250px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; 
+    box-shadow: 10px 14px 38px #000;
+}
+
+.form-register h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+    margin: 50px 0px;
+}
+
+.controls1 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    margin: 30px 0px;
+}
+.controls2 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: right;
+    display: inline;
+    background-color: white;
+    margin: 30px -50px;
+}
+.controls3 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+}
+.controls4 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    margin: -62px 340px;
+}
+
+.controles{
+    width: 600px;
+    height: 160px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 20px;
+    background-color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center; 
+    font-size: 18px;
+    line-height: 40px;
+    color: black;
+}
+
+.form-register a {
+    color: black;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    box-shadow: 2px 9px 15px #000;
+    background-color: #84A3FB;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #9FD5D1;
+    font-family: 'calibri';
+    width: 90%;
+    max-width: 1000px;
+    margin:0.50em auto;
+  
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    }
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    background: #84A3FB;
+}

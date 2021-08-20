@@ -1,0 +1,98 @@
+body{
+    font-family: arial, helvetica;
+	background: #e8e8e8;
+    background-image: url('../Imagenes/fongo.jpg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.form-register {
+    width: 600px;
+    background: #9FD5D1;
+    padding: 60px 250px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white; 
+    box-shadow: 10px 14px 38px #000;
+}
+
+.form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+    
+    
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center; 
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+    box-shadow: 2px 9px 15px #000;
+    background-color: #84A3FB;
+}
+.controls {
+    width: 600px;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    
+    background-color: white;
+    margin: auto;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #9FD5D1;
+    font-family: 'calibri';
+    width: 90%;
+    max-width: 1000px;
+    margin:0.50em auto;
+  
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    }
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    background: #84A3FB;
+}
+
+
