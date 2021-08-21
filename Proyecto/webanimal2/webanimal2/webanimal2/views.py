@@ -22,3 +22,8 @@ def formularioRegistro(request):
         #context 
     })
 
+def Contactos(request):
+    return render(request, 'ContactosWebanimal.html',{
+        #context
+    })
+
