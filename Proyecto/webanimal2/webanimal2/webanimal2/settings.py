@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'webanimal2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = db.MYSQL
+DATABASES = db.POSTGRESQL
 
 
 # Password validation

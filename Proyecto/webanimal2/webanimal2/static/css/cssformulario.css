@@ -1,7 +1,7 @@
 body{
     font-family: arial, helvetica;
 	background: #e8e8e8;
-    background-image: url('../Imagenes/fongo.jpg');
+    background-image: url(../images/fondo.jpg);
 }
 
 *{

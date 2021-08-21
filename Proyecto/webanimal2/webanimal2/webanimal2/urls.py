@@ -19,6 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name='index'),
+    path('', views.index, name='index'),
     path('Donaciones/', views.Donaciones, name='Donaciones'),
+    path('formularioWebanimal/', views.formularioWebanimal, name='formularioWebanimal'),
+    path('formularioRegistro/', views.formularioRegistro, name='formularioRegistro'),
 ]

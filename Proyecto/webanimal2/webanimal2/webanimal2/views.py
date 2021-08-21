@@ -9,6 +9,16 @@ def index(request):
 
 def Donaciones(request):
     return render(request, 'Donaciones.html',{
-        #context
+        #context 
+    })
+
+def formularioWebanimal(request):
+    return render(request, 'formularioWebanimal.html',{
+        #context 
+    })
+
+def formularioRegistro(request):
+    return render(request, 'formularioRegistro.html',{
+        #context 
     })
 
