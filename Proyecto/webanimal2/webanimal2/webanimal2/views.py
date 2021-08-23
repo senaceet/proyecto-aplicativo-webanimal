@@ -37,3 +37,8 @@ def Nosotros(request):
         #context
     })
 
+def Pagina_Inicio(request):
+    return render(request, 'Pagina_Inicio.html',{
+        #context
+    })
+
