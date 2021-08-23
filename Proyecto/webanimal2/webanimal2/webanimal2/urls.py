@@ -23,4 +23,6 @@ urlpatterns = [
     path('Donaciones/', views.Donaciones, name='Donaciones'),
     path('formularioWebanimal/', views.formularioWebanimal, name='formularioWebanimal'),
     path('formularioRegistro/', views.formularioRegistro, name='formularioRegistro'),
+    path('InicioSesion/', views.InicioSesion, name='InicioSesion'),
+    path('Nosotros/', views.Nosotros, name='Nosotros'),
 ]

@@ -27,3 +27,13 @@ def Contactos(request):
         #context
     })
 
+def InicioSesion(request):
+    return render(request, 'InicioSesion.html',{
+        #context
+    })
+
+def Nosotros(request):
+    return render(request, 'Nosotros.html',{
+        #context
+    })
+

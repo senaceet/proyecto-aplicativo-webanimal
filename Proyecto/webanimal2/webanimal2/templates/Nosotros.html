@@ -1,23 +1,19 @@
-<%-- 
-    Document   : Nosotros
-    Created on : 28/06/2021, 10:19:34 PM
-    Author     : Usuario
---%>
+{% load static %}
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css\Nosotros.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/Nosotros.css' %}">
         <title>Web Animal</title>
     </head>
     <body>
         <header>
             <ul class="menu">
-                <img src = "../vista/Imagenes/LogoWebanimal.png" height="90px" width="90px">
+                <img src = "{% static 'images/LogoWebanimal.png' %}" height="90px" width="90px">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Noticias</a></li>
@@ -30,7 +26,7 @@
         <center>
         <form class="form-register">
             <h1>Nosotros</h1>
-            <img src="../vista/Imagenes/LogoWebanimal.png" height="130px" width="130px">
+            <img src="{% static 'images/LogoWebanimal.png' %}" height="130px" width="130px">
                 <div>
                     <p>Webanimal es una organizacion sin ánimo de lucro que busca dar un hogar amoroso,
                         rehabilitar y dar en adopción a perros que son rescatados en estado de indefensión y maltrato.</p>
