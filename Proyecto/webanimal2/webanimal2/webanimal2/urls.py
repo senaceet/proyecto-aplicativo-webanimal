@@ -25,4 +25,5 @@ urlpatterns = [
     path('formularioRegistro/', views.formularioRegistro, name='formularioRegistro'),
     path('InicioSesion/', views.InicioSesion, name='InicioSesion'),
     path('Nosotros/', views.Nosotros, name='Nosotros'),
+    path('Pagina_Inicio/', views.Pagina_Inicio, name='Pagina_Inicio'),
 ]
