@@ -1,24 +1,20 @@
-<%-- 
-    Document   : holamundojsp
-    Created on : 6/05/2021, 09:36:29 AM
-    Author     : Claudia Diaz
---%>
+{% load static %}
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/IniciodeSesion.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/Nosotros.css' %}">
         <title>Webanimal</title>        
     </head>
     <body>
         <header>
             <nav class="menu">
                 <ul>
-                    <img src="/webanimal/vista/imagen/LogoWebanimal.png" height="95px" width="95px">
+                    <img src="{% static 'images/LogoWebanimal.png' %}" height="95px" width="95px">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Noticias</a></li>
@@ -35,7 +31,7 @@
                 <input class="controls" type="email" name="correo" placeholder="Correo electronico">
                 <label>Ingrese su contraseña</label>
                 <input class="controls" type="password" name="password" placeholder="Contraseña">
-                <p>¿Eres nuevo? <a href="/webanimal/vista/formulario.jsp">Registrate</a></p>
+                <p>¿Eres nuevo? <a href="/webanimal2/templates/formularioWebanimal.html">Registrate</a></p>
                 <input class="botons" type="submit" value="Entrar">
                 <p><a href="#">Recuperar contraseña</a></p>  
             </form>
