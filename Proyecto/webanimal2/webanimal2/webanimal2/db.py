@@ -1,5 +1,4 @@
 import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SQLITE = {
@@ -12,9 +11,9 @@ SQLITE = {
 POSTGRESQL = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbwebanimal',
+        'NAME': 'personal',
         'USER': 'postgres',
-        'PASSWORD': '123456',
+        'PASSWORD': 'clave12345',
         'HOST': 'localhost',
         'PORT': '5432'
     }
@@ -23,10 +22,10 @@ POSTGRESQL = {
 MYSQL = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db.prueba',
+        'NAME': 'aplicativo_webanimal',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'melasuda469',
         'HOST': 'localhost',
-        'PORT': '3307'
+        'PORT': '3306'
     }
 }

@@ -1,41 +1,88 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/Nosotros.css' %}">
-        <title>Webanimal</title>        
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-                <ul>
-                    <img src="{% static 'images/LogoWebanimal.png' %}" height="95px" width="95px">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Contactos</a></li>
-                    <li><a href="#">Donaciones</a></li>                       
-                </ul>
-            </nav>
-        </header>
+<html lang="en">
 
-        <section class="form-register"> 
-            <form action ="/webanimal/IniciarSesion1"  method = "post">
-                <h1>Inicio de sesion</h1>
-                <label>Ingrese su correo</label>
-                <input class="controls" type="email" name="correo" placeholder="Correo electronico">
-                <label>Ingrese su contraseña</label>
-                <input class="controls" type="password" name="password" placeholder="Contraseña">
-                <p>¿Eres nuevo? <a href="/webanimal2/templates/formularioWebanimal.html">Registrate</a></p>
-                <input class="botons" type="submit" value="Entrar">
-                <p><a href="#">Recuperar contraseña</a></p>  
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/Nosotros.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <img src="{% static 'images/LogoWebanimal.png' %}" height="95px" width="95px">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Donaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="casilla">
+        <div class="container">
+            <h2 class="text-center">Inicio de Sesión</h2>
+            <form class="needs-validation" novalidate method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="email">Ingrese su correo</label>
+                    <input class="form-control" type="email" name="email" placeholder="Ingrese su Correo"
+                        style="width: 250PX;" required>
+                    <div class="valid-tooltip position-relative">Campo Válido</div>
+                    <div class="invalid-tooltip position-relative">Complete los Campos</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Ingrese su contraseña</label>
+                    <input class="form-control" type="password" name="password" placeholder="Ingrese su Contraseña"
+                        style="width: 250PX;" required>
+                    <div class="valid-feedback">Campo Válido</div>
+                    <div class="invalid-feedback">Complete los Campos</div>
+                </div>
+                <div class="form-group form-check" style="font-size: 22px; margin-top: 15px;">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
+                    </label>
+                </div>
+                <p><a href="#">Recuperar Contraseña</a></p>
+                <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Acceder</button>
+                <p>¿Eres nuevo? <a href="/register">Regístrate</a></p>
             </form>
-        </section>            
+        </div>
+    </div>
 
-    </body>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+</body>
 </html>

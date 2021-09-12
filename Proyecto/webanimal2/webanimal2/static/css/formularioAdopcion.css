@@ -5,7 +5,9 @@
 }
 
 body {
+    
     background: url(../images/fondo.jpg);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .form-register {
