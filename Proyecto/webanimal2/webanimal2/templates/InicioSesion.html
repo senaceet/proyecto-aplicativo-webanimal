@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="menu">
             <ul>
@@ -34,11 +35,11 @@
     <div class="casilla">
         <div class="container">
             <h2 class="text-center">Inicio de Sesión</h2>
-            <form class="needs-validation" novalidate method="POST">
+            <form class="needs-validation" action="" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="email">Ingrese su correo</label>
-                    <input class="form-control" type="email" name="email" placeholder="Ingrese su Correo"
+                    <input class="form-control" type="text" name="email" placeholder="Ingrese su Correo"
                         style="width: 250PX;" required>
                     <div class="valid-tooltip position-relative">Campo Válido</div>
                     <div class="invalid-tooltip position-relative">Complete los Campos</div>
@@ -58,6 +59,7 @@
                 <p><a href="#">Recuperar Contraseña</a></p>
                 <button type="submit" class="btn btn-primary" style="margin-bottom: 15px;">Acceder</button>
                 <p>¿Eres nuevo? <a href="/register">Regístrate</a></p>
+                
             </form>
         </div>
     </div>

@@ -51,20 +51,19 @@ def Pagina_Inicio(request):
         #context
     })
 
-def login(request):
-    if request.method == 'POST':
+def login_view(request):
+    if request.method == "POST":
         email = request.POST.get('email')
         password = request.POST.get('password')
 
-        email = authenticate(email=email, password=password)
+        email = authenticate(username=email, password=password)
         if email:
             login(request, email)
             messages.success(request, 'Bienvenido {}'.format(email.username))
-            return redirect('index') # Nombre url
+            return redirect('Pagina_Inicio') # Nombre url
         else: 
             messages.error(request, 'Usuario o contraseña incorrecta')
     return render(request, 'InicioSesion.html',{
-        
     })
 
 def register(request):

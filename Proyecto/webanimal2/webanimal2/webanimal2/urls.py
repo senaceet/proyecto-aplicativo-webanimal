@@ -28,6 +28,6 @@ urlpatterns = [
     path('acceder/', views.acceder, name='acceder'),
     path('Nosotros/', views.Nosotros, name='Nosotros'),
     path('Pagina_Inicio/', views.Pagina_Inicio, name='Pagina_Inicio'),
-    path('login/', views.login, name='login'),
-    
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
 ]
