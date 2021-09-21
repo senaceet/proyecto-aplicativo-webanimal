@@ -66,17 +66,17 @@ def login_view(request):
     return render(request, 'InicioSesion.html',{
     })
 
-def register(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            username = form.cleaned_data['username']
-            messages.success(request, f'Usuario {username} creado.')
-    else:
-        form = UserCreationForm()
+# def register(request):
+#     if request.method == 'POST':
+#         form = UserCreationForm(request.POST)
+#         if form.is_valid():
+#             username = form.cleaned_data['username']
+#             messages.success(request, f'Usuario {username} creado.')
+#     else:
+#         form = UserCreationForm()
 
-    context = {'form : form'}
-    return render(request, 'templates/register.html', context)
+#     context = {'form : form'}
+#     return render(request, 'templates/register.html', context)
 
 def logout_view(request):
     logout(request)

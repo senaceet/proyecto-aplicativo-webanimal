@@ -21,13 +21,13 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('Donaciones/', views.Donaciones, name='Donaciones'),
-    path('ContactosWebanimal/', views.Contactos, name='ContactosWebanimal'),
+    path('donaciones/', views.Donaciones, name='Donaciones'),
+    path('contactosWebanimal/', views.Contactos, name='ContactosWebanimal'),
     path('frmadopcion/', views.frmadopcion, name='frmadopcion'),
     path('register/', views.register, name='register'),
     path('acceder/', views.acceder, name='acceder'),
-    path('Nosotros/', views.Nosotros, name='Nosotros'),
-    path('Pagina_Inicio/', views.Pagina_Inicio, name='Pagina_Inicio'),
+    path('nosotros/', views.Nosotros, name='Nosotros'),
+    path('pagina_inicio/', views.Pagina_Inicio, name='Pagina_Inicio'),
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
 ]
