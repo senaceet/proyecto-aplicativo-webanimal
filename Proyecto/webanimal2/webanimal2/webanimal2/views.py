@@ -66,6 +66,7 @@ def login_view(request):
     return render(request, 'InicioSesion.html',{
     })
 
+<<<<<<< HEAD
 #def register(request):
 #    if request.method == 'POST':
 #        form = UserCreationForm(request.POST)
@@ -77,6 +78,19 @@ def login_view(request):
 
     #context = {'form : form'}
     #return render(request, 'templates/register.html', context)
+=======
+# def register(request):
+#     if request.method == 'POST':
+#         form = UserCreationForm(request.POST)
+#         if form.is_valid():
+#             username = form.cleaned_data['username']
+#             messages.success(request, f'Usuario {username} creado.')
+#     else:
+#         form = UserCreationForm()
+
+#     context = {'form : form'}
+#     return render(request, 'templates/register.html', context)
+>>>>>>> 081b597e0d89bc989df777a1b4f095840d154ff0
 
 def logout_view(request):
     logout(request)
