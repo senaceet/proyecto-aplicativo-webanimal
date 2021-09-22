@@ -43,7 +43,6 @@ body {
     font-family: 'calibri';
     color: white; 
     box-shadow: 8px 14px 38px #000;
-  
    } 
    
 h2 {
@@ -130,7 +129,7 @@ p {
 .botons4 {
     background:#c8d6e5;
     color:#0A0A0A;
-    found-size:50px;
+    font-size:50px;
     margin:20px;
     width:-5px;
     height:5px;
