@@ -9,6 +9,12 @@ body {
     font-family: 'calibri';
 }
 
+.form-register {
+    width: 75%;
+    background: #9FD5D1;
+    
+}
+
 .casilla {
     width: 550px;
     background: #9FD5D1;
