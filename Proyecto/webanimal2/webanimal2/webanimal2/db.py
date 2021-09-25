@@ -22,10 +22,10 @@ POSTGRESQL = {
 MYSQL = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'aplicativowebanimal',
+        'NAME': 'aplicativo_webanimal',
         'USER': 'root',
-        'PASSWORD': 'sebitaz.5',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
-        'PORT': '3306'
+        'PORT': '3307'
     }
 }

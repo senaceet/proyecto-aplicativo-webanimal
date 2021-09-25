@@ -60,7 +60,7 @@ def login_view(request):
         if email:
             login(request, email)
             messages.success(request, 'Bienvenido {}'.format(email.username))
-            return redirect('Pagina_Inicio') # Nombre url
+            return redirect('Donaciones') # Nombre url
         else: 
             messages.error(request, 'Usuario o contraseña incorrecta')
     return render(request, 'InicioSesion.html',{
