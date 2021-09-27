@@ -1,4 +1,4 @@
-from App1.models import User
+# from App1.models import User
 from django.contrib.auth import forms
 from django.shortcuts import redirect, render
 from django.shortcuts import render

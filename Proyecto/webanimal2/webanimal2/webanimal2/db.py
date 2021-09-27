@@ -13,7 +13,7 @@ POSTGRESQL = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'personal',
         'USER': 'postgres',
-        'PASSWORD': '123456',
+        'PASSWORD': 'clave123456',
         'HOST': 'localhost',
         'PORT': '5432'
     }
@@ -24,8 +24,8 @@ MYSQL = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'aplicativo_webanimal',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'melasuda469',
         'HOST': 'localhost',
-        'PORT': '3307'
+        'PORT': '3306'
     }
 }
