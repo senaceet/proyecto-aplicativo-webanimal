@@ -1,10 +1,17 @@
 from django.contrib import admin
-from .models import Pet
-from .models import Document
+from .models import contacts
 from .models import Donation
-from .models import Adopcion
-from .models import User
-from .models import Solicitud
+from .models import Location
+from .models import Neighborhood
+from .models import Document
+from .models import dog_breed
+from .models import cat_breed
+from .models import questionnaire
+from .models import breed
+from .models import mascot
+from .models import request_adoption
+from .models import Adoption
+from .models import user_register
 # Register your models here.
 
 #admin.site.register(Solicitud)
