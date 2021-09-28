@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 
 from django.urls.base import reverse_lazy
-import webanimal2.db as db
+import  webanimal2.db as db
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
