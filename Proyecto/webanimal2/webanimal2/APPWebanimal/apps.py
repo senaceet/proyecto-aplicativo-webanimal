@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class App1Config(AppConfig):
+class AppwebanimalConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'App1'
+    name = 'APPWebanimal'
