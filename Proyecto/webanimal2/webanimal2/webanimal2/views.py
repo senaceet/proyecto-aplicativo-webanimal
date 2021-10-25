@@ -8,6 +8,10 @@ from django.contrib.auth import logout
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm
 from django.contrib import messages
+from APPWebanimal.models import User_register
+from APPWebanimal.forms import User_registerMio
+from django.http import HttpRequest
+
 
 def index(request):
     return render(request, 'index.html',{
@@ -82,6 +86,24 @@ def logout_view(request):
     logout(request)
     messages.success(request, 'Sesión finalizada')
     return redirect('login')
+
+
+
+# Registro usuario 
+
+class User_registerOtro(HttpRequest):
+
+    def FormularioRegistro(request):
+        registro = User_registerMio()
+        return render(request, "FormularioRegistro.html", {"form":registro})
+
+    def procesar_formulario(request):
+        registro = User_registerMio(request.POST)
+        if registro.is_valid():
+            registro.save()
+            registro = User_registerMio()
+
+            return render (request, "FormularioRegistro.html", {"form": registro, "mensaje": 'ok'})
 
 
 

@@ -19,6 +19,7 @@ from django.urls import path, include
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
+from APPWebanimal.models import User_register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,7 +27,8 @@ urlpatterns = [
     path('donaciones/', views.Donaciones, name='Donaciones'),
     path('contactoswebanimal/', views.Contactos, name='ContactosWebanimal'),
     path('frmadopcion/', views.frmadopcion, name='frmadopcion'),
-    path('register/', views.register, name='register'),
+    path('register/', views.User_registerOtro.FormularioRegistro, name='register'),
+    path('guardarRegistro/', views.User_registerOtro.procesar_formulario, name='guardarRegistro'),
     path('acceder/', views.acceder, name='acceder'),
     path('nosotros/', views.Nosotros, name='Nosotros'),
     path('pagina_inicio/', views.Pagina_Inicio, name='Pagina_Inicio'),
