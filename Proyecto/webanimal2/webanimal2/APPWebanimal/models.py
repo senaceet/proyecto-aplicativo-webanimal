@@ -21,7 +21,7 @@ class Contacts(models.Model):
 class Location(models.Model):
     description = models.TextField(verbose_name='Descripción', max_length=100)
 
-    def _str_(self):
+    def __str__(self):
         return self.description
 
     class Meta:
@@ -47,7 +47,7 @@ class Neighborhood(models.Model):
 class Document(models.Model):
     description = models.TextField(verbose_name='Descripción', max_length=100)
 
-    def _str_(self):
+    def __str__(self):
         return self.description
 
     class Meta:
@@ -137,7 +137,7 @@ class User_register(models.Model):
     tipo_documento = models.ForeignKey(Document, on_delete=models.CASCADE)
     localidad = models.ForeignKey(Location, on_delete=models.CASCADE)
 
-    def _str_(self):
+    def __str__(self):
         return self.names
 
     class Meta:

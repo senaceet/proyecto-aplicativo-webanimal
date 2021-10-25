@@ -4,33 +4,34 @@ body{
     background-image: url(../images/fondo.jpg);
 }
 
-*{
+/* *{
     margin: 0;
-    padding: 0;
-}
+    padding: 0px;
+} */
 
-form{
+h4 {
+    
+    margin-bottom: 50px;
+    color: white;
+}
+.container{
     width: 600px;
     background: #9FD5D1;
-    padding: 80px;
+    padding: 65px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white; 
     box-shadow: 10px 14px 38px #000;
 }
 
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: white;
-}
 
-.a {
+
+/* .a {
     color: white;
     text-decoration: none; 
-}
+} */
 
 button {
     width: 100%;
@@ -43,7 +44,7 @@ button {
     background-color: #84A3FB;
 }
 
-.controls1 {
+/* .controls1 {
     width: 400px;
     height: 40px;
     border-radius: 8px;
@@ -53,9 +54,9 @@ button {
     position: relative;
     margin-left: -170px;
     background-color: white;
-}
+} */
 
-.controls2 {
+/* .controls2 {
     width: 500px;
     height: 40px;
     border-radius: 8px;
@@ -89,6 +90,6 @@ button {
     position: relative;
     margin-left: -170px;
     background-color: white;
-}
+} */
 
 
