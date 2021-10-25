@@ -9,10 +9,10 @@ body{
     padding: 0;
 }
 
-.form-register {
+form{
     width: 600px;
     background: #9FD5D1;
-    padding: 80px 220px;
+    padding: 80px;
     margin: auto;
     margin-top: 150px;
     border-radius: 4px;
@@ -32,19 +32,19 @@ body{
     text-decoration: none; 
 }
 
-.botons {
+button {
     width: 100%;
     border: none;
-    padding: 12px;
+    padding: 10px;
     color: black;
-    margin: 16px 0;
+    margin-bottom: 0px;
     font-size: 16px;
     box-shadow: 2px 9px 15px #000;
     background-color: #84A3FB;
 }
 
 .controls1 {
-    width: 500px;
+    width: 400px;
     height: 40px;
     border-radius: 8px;
     margin-bottom: 20px;
