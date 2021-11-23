@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <link rel="stylesheet" href="{% static 'css/formulario.css' %}">
+            <title>Webanimal</title>
+        </head>
+        <body>
+
+                    {% if form.errors %}
+                        <div class="alert alert-danger" role="alert">
+                            This is a danger alert—check it out!
+                        </div>
+                    {% endif %}
+
+                    
+                  
+                <form action="{% url 'guardarRegistro' %}" method="POST" class="container">
+                        {% csrf_token %}
+                        <h2 class="text-center">Formulario Registro</h2>
+                        {% if mensaje %}
+                            <div class="alert alert-success" role="alert">
+                                Se registro con exito
+                            </div>
+                        {% endif %}
+
+                        {{ form}}
+
+                        <p>Estoy de acuerdo con <a href="https://es.lipsum.com/">Terminos y condiciones</a></p>
+                        
+                        <p><a href="/login">¿Ya tengo cuenta?</a></p>
+                    
+                        <button type="submit" class="btn btn-info"><a href="InicioSesion.html"></a>Registrar</button> 
+
+                </form>
+                    
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        </body>
+</html>
