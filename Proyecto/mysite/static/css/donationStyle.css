@@ -6,7 +6,7 @@
 .form-donation{ 
     background: #9FD5D1;
     width: 700px;
-    height: 760px;   
+    height: 300px;   
     margin: auto;   
     margin-top: 30px; 
     border-radius: 8px;
@@ -61,7 +61,9 @@ h2 {
 
 p {
     font-size: 20px;
-    right:-25px;   
+    right:-140px;
+    font-family: 'lato',sans-serif;  
+    padding: 40px 50px;  
  }
 
  .form-donation p {
@@ -249,29 +251,50 @@ p {
 
 
  .botonsA1 {
-    background:#c8d6e5;
+    background:#9eb2c9;
     color:#0A0A0A;
     width:300px;
-    margin:30px;
+    margin:35px;
     box-shadow: 3px 3px 3px #000;
     height: 200px;
-    left: 20px;
+    left: 80px;
     position: relative;
     top: 20px;
     padding: 15px 30px;
+    border-radius: .25rem;
+    text-decoration: none;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.99);
+        box-shadow: 0px 0px 0px #000;
+    }
+    70% {
+        transform: scale(.1);
+        box-shadow: 0px 0px 10px rgb(52, 54, 52);
+    }
+    100% {
+        transform: scale(.99);
+        box-shadow: 0px 0px 0px rgb(5, 5, 5);
+    }
 }
 
 .botonsB2 {
-    background:#c8d6e5;
+    background:#9eb2c9;
     color:#0A0A0A;
     width:300px;
     margin:30px;
     box-shadow: 3px 3px 3px #000;
     height: 200px;
-    left: 10px;
+    left: 200px;
     position: relative;
     top: 20px;
     padding: 15px 30px;
+    border-radius: .25rem;
+    text-decoration: none;
+    animation: pulse 1.5s infinite;
     
 }
 
