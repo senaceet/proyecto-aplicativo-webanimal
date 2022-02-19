@@ -30,15 +30,17 @@
     width: 100%;
     max-width: 1000px;
     text-align: center;
-    margin: 0 auto;
+    margin:  auto;
             
 }
 
 .seccion{
     background-color: white;
-    margin: 20px;
-    width: 650px;
+    margin-top: 20px;
+    width: 63%;
     float: left;
+    margin-left: 20px;
+    
 }
 time{
     color: #999;
@@ -58,9 +60,9 @@ article img{
 
 .columna{
     background-color: white;
-    width: 300px;
-    float: left;
-    margin: 20px 0;
+    width: 30%;
+    margin: 20px;
+    float: right;
 }
 
 .slider-frame{
