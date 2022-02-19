@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9@$4x0(ge2cv*r^fp9+gneue1hnusoe6r$da*0afot2@4gt#$6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['webanimal.azurewebsites.net']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -132,5 +132,5 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = BASE_DIR / 'static' 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATIC_ROOT = BASE_DIR / 'static' 
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
