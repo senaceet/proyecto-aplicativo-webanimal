@@ -15,10 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+
+from django.conf.urls.static import static 
+from django.conf import settings
+# from mysite.pets.views import PetsListView
 from . import views 
 
+from pets.views import PetsListView
+
+
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', PetsListView.as_view(), name='index'),
     path('admin/', admin.site.urls),
     path('users/login', views.login_view, name='login'),
     path('users/logout', views.logout_view, name='logout'),
@@ -28,6 +36,8 @@ urlpatterns = [
     path('donation/', views.donation, name='donation'),
     path('donate/', views.frmDonation, name='donate'),
     path('news/', views.news, name='news'),
-    
-    
+    path('mascotas/', include('pets.urls'))
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

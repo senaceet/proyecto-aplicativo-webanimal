@@ -3,11 +3,13 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login , logout
 from .forms import RegisterForm
 from django.contrib.auth.models import User
-
+from pets.models import Pets
 
 def index(request):
+    pets = Pets.objects.all().order_by('-id')
+
     return render(request, 'index.html',{
-        #context
+        'pets': pets, 
         
     })
 
