@@ -24,7 +24,7 @@ MYSQL = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'aplicativo_webanimal',
         'USER': 'root',
-        'PASSWORD': 'sebitaz.5',
+        'PASSWORD': 'melasuda469',
         'HOST': 'localhost',
         'PORT': '3306'
     }

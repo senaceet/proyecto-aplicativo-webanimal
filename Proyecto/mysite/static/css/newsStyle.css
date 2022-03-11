@@ -35,10 +35,9 @@
 }
 
 .seccion{
-
     background-color: white;
     margin-top: 20px;
-    width: 46.333%;
+    width: 63%;
     float: left;
     margin-left: 20px;
     
@@ -51,7 +50,6 @@ article{
     border: 1px solid #999;
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 4px;
 }
 
 article img{

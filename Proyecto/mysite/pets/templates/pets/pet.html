@@ -1,24 +1,43 @@
 {%  extends 'base.html' %}
+{%  load static %}
+
+{% block head %} 
+    <link rel="stylesheet" href="../static/css/petStyle.css"> 
+{% endblock %}
 
 {% block content %}
+
+
+
 <div class="bg">
-    <div class="col-3 mt-3">
+    <div>
+        <!-- {% if pets.image %}
+            <img class="imagen" src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="200">
+        {% endif %} -->
 
         {% if pets.image %}
-            <img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="200">
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                </ul>
+            </div>
         {% endif %}
     </div>
-
-    <div class="col">
-        <div class="h1">{{ pets.name }}</div>
-            <div class="h5 font.weight-bold">
-                <div class="">
-                    <p>{{ pets.description }}</p>
+    
+        <div class="col">
+            <div class="h1">{{ pets.name }}</div>
+                <div class="h5 font.weight-bold">
+                    <div class="">
+                        <p>{{ pets.description }}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="">
-                <p>{{ pets.history }}</p>
-            </div>
-    </div>
-</div>
+                <div class="">
+                    <p>{{ pets.history }}</p>
+                </div>
+        </div>
+    
+</div> 
 {% endblock %}
