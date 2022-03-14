@@ -21,7 +21,7 @@
 
     <div class="bg">
         <header>     
-            <!-- {% include 'pets/snippets/search.html' %}        -->
+            {% include 'pets/snippets/search.html' %}       
         
             <div class="slider-frame">
                 <ul>
@@ -35,7 +35,7 @@
             <div class="row">
                 {% for object in pets_list %}
                     <div class="col-3 mt-5">
-                    {% include 'pets/snippets/pets.html' with pets=object %}
+                       {% include 'pets/snippets/pets.html' with pets=object %}
                     </div>
                 {% endfor %}
             </div>
