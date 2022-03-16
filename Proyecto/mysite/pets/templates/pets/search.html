@@ -2,7 +2,18 @@
 
 {% block content %}
 <div class="col">
-    <p>Busqueda de mascotas</p>
+    {% include 'pets/snippets/search.html' with query=query %}
+    <hr>
+    <p>Resultados para: {{ query }} ({{count}})</p>
+    <div class="row">
+        {% for object in pets_list %}
+        <div class="col-3 mt-5">
+           {% include 'pets/snippets/pets.html' with pets=object %}
+        </div>
+    {% endfor %}
+    </div>
+    
+
 </div>
 
 {% endblock %}

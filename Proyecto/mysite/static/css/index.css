@@ -11,7 +11,7 @@ div.bg{
     box-shadow: 10px 14px 38px #000;
     border-radius: 10px;
     margin: 60px;
-    padding: 60px 60px;
+    padding: 60px 20px;
 }            
 
 /* Menu */
@@ -43,9 +43,9 @@ div.bg{
 }
 
 .slider-frame{
-    width: 1090px;
-    height: 400px;
-    margin: 50px auto 0;
+    width: 1100px;
+    height: 450px;
+    margin: 0px auto 0;
     overflow: hidden;
     box-shadow: 10px 14px 38px #000;
     border-radius: 10px;
