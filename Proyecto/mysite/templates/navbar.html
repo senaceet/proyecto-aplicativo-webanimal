@@ -6,7 +6,7 @@
 {% url 'donation' as donation%}
 {% url 'news' as news %}
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9FD5D1;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9FD5D1; border-radius: 3px;">
     <a href="{{ index }}" class="navbar-brand" style="margin-left: 50px;">
         <img src="../static/img/logo.png" height="70px" width="73px" alt="logo"></img>
         Webanimal</a>
@@ -50,7 +50,7 @@
 
                     <li class="nav-item">
                         <a href="{% url 'logout' %}" class="nav-link">
-                            <span class="fas fa-sign-in-alt"></span>   
+                            <span class="fas fa-sign-in-alt"></span>
                         Salir</a>
                     </li>
 
@@ -58,7 +58,7 @@
 
                     <li class="nav-item {% if request.path == login %}activate{% endif %}">
                         <a href="{{ login }}" class="nav-link">
-                            <span class="fas fa-user"></span>    
+                            <span class="fas fa-user"></span>
                         Iniciar Sesión</a>
                     </li>
 

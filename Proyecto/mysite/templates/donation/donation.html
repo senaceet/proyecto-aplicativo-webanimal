@@ -1,18 +1,26 @@
 {% extends 'base.html' %}
 
-{% block head %} 
-    <link rel="stylesheet" href="../static/css/donationStyle.css"> 
-    <title>Inicio</title> 
+{% block head %}
+    <link rel="stylesheet" href="../static/css/donationStyle.css">
+    <title>Inicio</title>
 {% endblock %}
 
+{% block header %}
+<header class="text-header alin-item-center" id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="">
+                    <h1><strong class="cur">Donaciones</strong><br>Ayuda a Nuestros Peluditos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="button_section"><a class="main_bt" href="#">Buy Now</a></div>
+                </div>
+            </div>
+        </div>
+</header>
+{% endblock %}
 {% block content %}
 
-    <form class="form-donation">            
-        <h2>Donaciones</h2>
-        
-        <p>Elige la opcion que quieras donar</p>
-        <a class="botonsA1" href="{% url 'donate' %}" >elementos</a>
-        <a class="botonsB2" href="{% url 'donate' %}" >Dinero</a>
-    </form>
+
 
 {% endblock %}

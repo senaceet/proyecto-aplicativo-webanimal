@@ -3,25 +3,23 @@
     padding: 0;
 }
 
-.form-donation{ 
-    background: #9FD5D1;
-    width: 700px;
-    height: 300px;   
-    margin: auto;   
-    margin-top: 30px; 
-    border-radius: 8px;
-    font-family: 'calibri';
-    color: black; 
-    box-shadow: 8px 14px 38px #000;
-   } 
-   
+#banner{
+    width: 100%;
+    min-height: 50vh;
+    background-image:url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    
+   }
+
 h2 {
        position: relative;
-       
+
        top: 20px;
        text-align: center;
        font-size: 30px;
-   } 
+   }
 
 .controlsa {
     padding:10px;
@@ -62,16 +60,16 @@ h2 {
 p {
     font-size: 20px;
     right:-140px;
-    font-family: 'lato',sans-serif;  
-    padding: 40px 50px;  
+    font-family: 'lato',sans-serif;
+    padding: 40px 50px;
  }
 
  .form-donation p {
-    position: relative;  
+    position: relative;
     top: auto;
     left: 20;
     display:block;
- } 
+ }
 
 .botons1 {
     background:#c8d6e5;
@@ -137,7 +135,7 @@ p {
     position: relative;
     top: -60px;
     padding: 15px 30px;
-    
+
 }
 
 .botonsC {
@@ -219,7 +217,7 @@ p {
     position: relative;
     margin: 5px -5px;
 }
- 
+
 .menu{
     list-style: none;
     padding: 0;
@@ -228,7 +226,7 @@ p {
     width: 90%;
     max-width: 1000px;
     margin:0.50em auto;
-  
+
 }
 .menu li a{
     text-decoration: none;
@@ -239,14 +237,14 @@ p {
 .menu li{
     display: inline-block;
     text-align: center;
-    
+
 }
 .menu li a:hover{
     background: #84A3FB;
 }
 
 .parrafito2 {
-    margin: 80px 20px; 
+    margin: 80px 20px;
  }
 
 
@@ -295,7 +293,7 @@ p {
     border-radius: .25rem;
     text-decoration: none;
     animation: pulse 1.5s infinite;
-    
+
 }
 
 .botonsC3 {
@@ -327,7 +325,7 @@ p {
 }
 
 .parrafito {
-    margin: 110px 20px; 
+    margin: 110px 20px;
  }
 
  .botonsH {
