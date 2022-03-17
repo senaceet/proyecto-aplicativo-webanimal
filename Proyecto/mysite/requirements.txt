@@ -17,6 +17,7 @@ iniconfig==1.1.1
 Interface==2.11.1
 mysqlclient==2.0.3
 packaging==21.0
+Pillow==9.0.1
 pipenv==2021.5.29
 platformdirs==2.4.0
 pluggy==1.0.0
