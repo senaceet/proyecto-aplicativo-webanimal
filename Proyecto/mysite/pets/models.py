@@ -10,6 +10,9 @@ class Pets(models.Model):
     history = models.TextField()
     slug = models.SlugField(null=False, blank=False, unique=True)
     image = models.ImageField(upload_to='pets', null=False, blank=False)
+    image2 = models.ImageField(upload_to='pets', null=False, blank=False)
+    image3 = models.ImageField(upload_to='pets', null=False, blank=False)
+    image4 = models.ImageField(upload_to='pets', null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     # def save(self, *args, **kwargs):

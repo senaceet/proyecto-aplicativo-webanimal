@@ -1,0 +1,25 @@
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box_footer .logo img{
+    width: 180px;
+}

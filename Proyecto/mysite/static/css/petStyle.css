@@ -42,13 +42,13 @@ div.bg{
     background: #84A3FB;
 }
 
-.imagen{
+/* .imagen{
     width: 300px;
     height: 300px;
     margin: 10px auto 0;
-}
+} */
 
-/* .slider-frame{
+.slider-frame{
     width: 900px;
     height: 400px;
     margin: 10px auto 0;
@@ -71,7 +71,7 @@ div.bg{
 
 .slider-frame img {
 	width: 100%;
-} */
+}
 
 @keyframes slide {
 	0% {margin-left: 0;}
