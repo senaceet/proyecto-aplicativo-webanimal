@@ -9,18 +9,21 @@
     background-image:url("../img/banner.jpg");
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
-    
+
    }
 
-h2 {
-       position: relative;
-
-       top: 20px;
+h1 {
        text-align: center;
-       font-size: 30px;
+       color: white;
    }
 
+#parrafo1{
+    text-align: center;
+}
+h2 {
+       text-align: center;
+       color: black;
+   }
 .controlsa {
     padding:10px;
     border-radius: 6px;
