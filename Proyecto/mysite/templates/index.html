@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
-{% block head %} 
-    <link rel="stylesheet" href="../static/css/index.css"> 
-    <title>Inicio</title> 
+{% block head %}
+    <link rel="stylesheet" href="../static/css/index.css">
+    <title>Inicio</title>
 {% endblock %}
 
 {% block content %}
-
+<header class="text-header alin-item-center">
     <div class="container">
         <!-- Mensaje de Alerta -->
         {% if messages %}
@@ -16,21 +16,89 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             {% endfor %}
-        {% endif %}   
+        {% endif %}
     </div>
 
-    <div class="bg">
-        <header>     
-            <!-- {% include 'pets/snippets/search.html' %}        -->
-        
-            <div class="slider-frame">
-                <ul>
-                    <li><img src="../static/img/slider1.jpg" alt=""></li>
-                    <li><img src="../static/img/slider2.jpg" alt="" width="100%" height="100%"></li>
-                    <li><img src="../static/img/slider3.jpg"></li>
-                    <li><img src="../static/img/slider4.jpg"></li>
-                </ul>
+    <div class="slider-frame about" >
+        <ul>
+            <li><img src="../static/img/slider1.jpg" alt="" width="100%" height="100%"></li>></li>
+            <li><img src="../static/img/slider2.jpg" alt="" width="100%" height="100%"></li>
+            <li><img src="../static/img/slider3.jpg" alt="" width="100%" height="100%"></li>></li>
+            <li><img src="../static/img/slider4.jpg" alt="" width="100%" height="100%"></li>></li>
+        </ul>
+    </div>
+
+    <!-- <div class="bg"> -->
+
+            <!-- {% include 'pets/snippets/search.html' %}-->
+            <div>
+
+            <!-- </div>
+            <div class="bg">
+                <div class="terms1">
+                    <h2>Lo que hacemos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magnam rerum labore numquam nihil! Commodi ipsum dolores distinctio, facilis ea illo velit laborum sunt quisquam unde sapiente voluptatibus, magni eos.
+                    </p>
+                </div>
+
+                <div class="terms2">
+                    <h2>Lo que queremos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iusto natus eos nulla, nostrum itaque maiores fuga quisquam omnis totam, accusantium recusandae non! Non, odit pariatur? Beatae reiciendis vitae rem?</p>
+                </div>
+            </div> -->
+
+
+ <!-- Feature -->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h1>Bienvenidos</h1>
+          <hr class="bottom-line">
+        </div>
+        <div class="feature-info">
+          <div class="fea1">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h2>Lo que hacemos</h2>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fas fa-paw"></i>
+              </div>
             </div>
+          </div>
+          <div class="fea2">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h2>Lo que queremos</h2>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fas fa-home"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea3">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h2>En Webanimal tenemos a muchos buscando hogar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem omnis sit rem ex nesciunt quas enim qui rerum perferendis error voluptates quibusdam, pariatur hic mollitia nihil necessitatibus, adipisci odio quo.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature           -->
+
+
+
+
 
             <div class="row">
                 {% for object in pets_list %}
@@ -39,8 +107,9 @@
                     </div>
                 {% endfor %}
             </div>
-            
-        </header> 
 
-    </div>
+
+
+    <!-- </div> -->
+</header>
 {% endblock %}
