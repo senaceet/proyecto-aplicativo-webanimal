@@ -20,10 +20,16 @@ h1 {
 #parrafo1{
     text-align: center;
 }
+
 h2 {
        text-align: center;
        color: black;
    }
+
+#donar{
+    align-items:flex-end;
+
+}
 .controlsa {
     padding:10px;
     border-radius: 6px;
