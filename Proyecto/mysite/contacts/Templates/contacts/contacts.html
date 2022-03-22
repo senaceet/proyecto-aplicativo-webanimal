@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/contactsStyle.css">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+<!-- Bloque de Contenido de Templates -->
+{% block content %}
+    <!-- Form -->
+    <form action="" method="post">
+      {% csrf_token %}
+<div class="mb-3">
+  {{ form.names | as_crispy_field }}
+</div>
+<div class="mb-3">
+{{ form.email | as_crispy_field }}
+</div>
+<div class="mb-3">
+{{ form.number | as_crispy_field }}
+</div>
+<div class="mb-3">
+  {{ form.issue | as_crispy_field}}
+</div>
+{% if messages %}
+  {% for msg in messages %}
+  <div class="alert alert-success">
+    <strong>{{ msg }}</strong>
+  </div>
+  {% endfor %}
+{% endif %}
+<button type="submit" id="boton" class="btn btn-primary">Enviar</button>
+<div class="contact-info">
+<ul>
+  <li>
+ <i id="icon" class="fa fa-phone">11111011101</i>
+  </li>
+  <div class="textico">
+    <div class="container">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text.</p>
+    </div>
+</div>
+</ul>
+</div>
+</form>
+        <!-- <div class="foot">
+            <div class="redes">
+                <span class="iconos" id="twitter"><a href="#"></a><i class="fab fa-twitter-square"></i></a></span>
+                <span class="iconos" id="facebook"><a href="#"></a><i class="fab fa-facebook"></i></a></span>
+                <span class="iconos" id="instagram"><a href="#"></a><i class="fab fa-instagram"></i></a></span>
+            </div>
+        </div> -->
+{% endblock %}

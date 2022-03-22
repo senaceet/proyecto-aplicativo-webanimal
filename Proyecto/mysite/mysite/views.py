@@ -60,10 +60,6 @@ def aboutUs(request):
         #context
     })
 
-def contacts(request):
-    return render(request, 'contacts.html',{
-        #context
-    }) 
 
 def donation(request):
     return render(request, '../templates/donation/donation.html',{

@@ -32,7 +32,7 @@ urlpatterns = [
     path('users/logout', views.logout_view, name='logout'),
     path('users/register', views.register, name='register'),
     path('us/', views.aboutUs, name='us'),
-    path('contact/', views.contacts, name='contacts'),
+    path('contacts/', include('contacts.urls')),
     path('donation/', views.donation, name='donation'),
     path('donate/', views.frmDonation, name='donate'),
     path('news/', views.news, name='news'),
