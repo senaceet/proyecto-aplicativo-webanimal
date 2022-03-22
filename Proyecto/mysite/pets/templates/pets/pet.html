@@ -1,0 +1,47 @@
+{%  extends 'base.html' %}
+{%  load static %}
+
+{% block head %} 
+    <link rel="stylesheet" href="../static/css/petStyle.css"> 
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="bg">
+    <div>
+        <!-- {% if pets.image %}
+            <img class="imagen" src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="200">
+        {% endif %} -->
+
+        {% if pets.image %}
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="{{ pets.image.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image2.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image3.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                    <li><img src="{{ pets.image4.url }}" alt="Imagen de la mascota" width="200" height="500"></li>
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+    
+        <div class="col">
+            <div class="h1">{{ pets.name }}</div>
+                <div class="h5 font.weight-bold">
+                    <div class="">
+                        <p>{{ pets.description }}</p>
+                    </div>
+                </div>
+                <div class="">
+                    <p>{{ pets.history }}</p>
+                </div>
+                <div class="">
+                    <input type="submit" name="" value="Adoptar" class="btn btn-primary">
+                </div>
+        </div>
+
+    
+</div> 
+{% endblock %}

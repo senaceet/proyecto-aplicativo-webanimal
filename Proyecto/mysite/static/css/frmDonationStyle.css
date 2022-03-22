@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #9FD5D1;
+    font-family: 'calibri';
+    width: 90%;
+    max-width: 1000px;
+    margin:0.50em auto;
+  
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    }
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    background: #84A3FB;
+}
+
+.form-donation {
+    background: #9FD5D1;
+    width: 700px;
+    height: 550px;   
+    margin: auto;  
+    margin-top: 30px;  
+    border-radius: 8px;
+    font-family: 'calibri';
+    color: white; 
+    box-shadow: 8px 14px 38px #000;
+
+} 
+
+.controls1 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    margin: 10px 16px;
+
+}
+
+.controls2 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: right;
+    display: inline;
+    background-color: white;
+    margin: 10px 25px;
+}
+.controls3 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    margin: 40px 20px;
+}
+.controls4 {
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    margin: 40px 20px;
+}
+
+.controles{
+    width: 600px;
+    height: 160px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 20px;
+    background-color: white;
+    margin:-40px -145px;
+}
+
+.botonsH {
+    background:#c8d6e5;
+    color:#0A0A0A;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    position: relative;
+    top: 10px;
+    right: -280px;
+}

@@ -1,0 +1,73 @@
+{% url 'login' as login %}
+{% url 'index' as index%}
+{% url 'register' as register %}
+{% url 'us' as us %}
+{% url 'contacts' as contacts %}
+{% url 'donation' as donation%}
+{% url 'news' as news %}
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('../static/img/background-footer.svg'); border-radius: 3px; background-size: contain;">
+    <a href="{{ index }}" class="navbar-brand" style="margin-left: 50px;">
+        <img src="../static/img/logo.png" height="70px" width="73px" alt="logo"></img>
+        Webanimal</a>
+
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ index }}">
+                        <span class="fas fa-home"></span> Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ donation }}">
+                        <span class="fas fa-hand-holding-usd"></span> Donaciones</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ us }}">
+                        <span class="fas fa-users"></span> Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ news }}">
+                        <span class="fas fa-newspaper"></span> Noticias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ contacts }}">
+                        <span class="fas fa-phone-alt"></span> Contáctanos</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                {% if user.is_authenticated %}
+
+                    <li class="nav-item">
+                        <a href="{% url 'logout' %}" class="nav-link">
+                            <span class="fas fa-sign-in-alt"></span>
+                        Salir</a>
+                    </li>
+
+                {% else %}
+
+                    <li class="nav-item {% if request.path == login %}activate{% endif %}">
+                        <a href="{{ login }}" class="nav-link">
+                            <span class="fas fa-user"></span> Iniciar Sesión</a>
+                    </li>
+
+                    <li class="nav-item {% if request.path == register %}activate{% endif %}">
+                        <a href="{{ register }}" class="nav-link">
+                            <span class="fas fa-user-plus"></span> Registro</a>
+                    </li>
+
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>

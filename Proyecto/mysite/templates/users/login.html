@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="../static/css/loginStyle.css">
+    <title>Iniciar Sesión</title>
+{% endblock %}
+
+{% block content %}
+<div class="bgForm">
+    <div class="container">
+
+        <!-- Mensaje de Alerta -->
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-dismissible {% if message.tags == 'success'%}alert-success{% else %}alert-danger{% endif %}" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            {% endfor %}
+        {% endif %}
+
+        <div class="row">
+            <div class="col">
+
+                <h2>Inicio de Sesión</h2>
+
+                <!-- Formilario Inicio Sesión -->
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="userame" id="usernamelbl">Username</label>
+                        <input type="text" name="username" class="form-control" placeholder="username" style="
+                        margin-bottom: 20px">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" id="passwordlbl">Contraseña</label>
+                        <input type="password" name="password" class="form-control" style="
+                        margin-bottom: 25px">
+                    </div>
+
+                    <button type="submit" id="btn" class="btn btn-primary">Ingresar</button>
+                    <p class="text-start">¿No tienes cuenta? 
+                        <a href="{% url 'register' %}" class="link-primary">Crear una</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+    <link rel="stylesheet" href="../static/css/newsStyle.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Inicio</title> 
+{% endblock %}
+    
+{% block content %}
+
+<div class="agrupar" >
+    <section class="imagen">
+        <div class="slider-frame"  >
+            <ul>
+                <li><img src="../static/img/soldier1.jpg" alt=""></li>
+                <li><img src="../static/img/soldier2.jpg" alt="" width="100%" height="100%"></li>
+                <li><img src="../static/img/soldier3.jpg"></li>
+                <li><img src="../static/img/soldier4.jpg"></li>
+            </ul>
+        </div>               
+    </section>
+    <section class="seccion">
+        <div data-aos="zoom-in">
+        <article>
+            <hgroup>
+                <h1>Título primera noticia</h1>
+                <h2>Subtítulo primera noticia</h2>
+            </hgroup>                
+            <time datetime="12-10-2021">Publicado 12-10-2021</time>
+            <img src="../static/img/images (1).jpg">
+            <p>Lorem ipsum, dolor sit amet <small>consectetur adipisicing elit</small>. Harum <span>sunt aut magnam quisquam</span>, illo, <cite>nam autem accusamus cumque odit et vel</cite>, accusantium illum debitis ipsam molestiae fugit aliquid quo iure?</p>
+            <address>
+                <a href="http://google.com">Visita google</a>
+            </address>
+        </div>
+        </article>
+        <article>
+            <div data-aos="zoom-in">
+            <hgroup>
+                <h1>Título tercera noticia</h1>
+                <h2>Subtítulo tercera noticia</h2>
+            </hgroup>                
+            <time datetime="12-10-2021">Publicado 12-10-2021</time>
+            <img src="../static/img/descarga (1).jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex maxime modi hic porro veniam cumque iusto quia dolores, enim ea blanditiis vero necessitatibus eius reprehenderit voluptatum quibusdam odio inventore.</p>
+        </div>
+        </article>
+    </section>
+
+    <section class="seccion">
+        <div data-aos="zoom-in">
+        <article>
+            <hgroup>
+                <h1>Título segunda noticia</h1>
+                <h2>Subtítulo segunda noticia</h2>
+            </hgroup>                
+            <time datetime="12-10-2021">Publicado 12-10-2021</time>
+            <img src="../static/img/images (1).jpg">
+            <p>Lorem ipsum, dolor sit amet <small>consectetur adipisicing elit</small>. Harum <span>sunt aut magnam quisquam</span>, illo, <cite>nam autem accusamus cumque odit et vel</cite>, accusantium illum debitis ipsam molestiae fugit aliquid quo iure?</p>
+            <address>
+                <a href="http://google.com">Visita google</a>
+            </address>
+        </div>
+        </article>
+        <article>
+            <div data-aos="zoom-in">
+            <hgroup>
+                <h1>Título cuarta noticia</h1>
+                <h2>Subtítulo cuarta noticia</h2>
+            </hgroup>                
+            <time datetime="12-10-2021">Publicado 12-10-2021</time>
+            <img src="../static/img/descarga (1).jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex maxime modi hic porro veniam cumque iusto quia dolores, enim ea blanditiis vero necessitatibus eius reprehenderit voluptatum quibusdam odio inventore.</p>
+        </div>
+        </article>
+    </section>
+
+    
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+
+{% endblock %}
