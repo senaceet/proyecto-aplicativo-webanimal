@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="../static/css/adoptStyle.css">
+{% endblock %}
+
+
+{% block header %}
+<div class="container-slider">
+  <div class="slider" id="slider">
+    <div class="slider__section"><img src="" alt="" class="slider__img"></div>
+    <div class="slider__section"><img src="" alt="" class="slider__img"></div>
+    <div class="slider__section"><img src="" alt="" class="slider__img"></div>
+    <div class="slider__section"><img src="" alt="" class="slider__img"></div>
+  </div>
+</div>
+
+{% endblock %}
+
+{%block content%}
+    <div class="row">
+        {% for object in pets_list %}
+            <div class="col-3 mt-5">
+            {% include 'pets/snippets/pets.html' with pets=object %}
+            </div>
+        {% endfor %}
+    </div>
+{%endblock%}

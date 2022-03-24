@@ -5,17 +5,7 @@
     /* font-family: lato; */
 }
 
-.bg{
-    background-color: transparent;
-    /* font-family: 'Open Sans', sans-serif; */
-    box-shadow: 10px 14px 38px #000;
-    border-radius: 10px;
-    /* width: 1830px; */
-    position: relative;
-    right: 250px;
-    /* padding: 60px 20px; */
-    margin-top: 30px;
-}
+
 
 /* Menu */
 .menu{
@@ -44,6 +34,18 @@
 .menu li a:hover{
     background: #84A3FB;
 }
+
+
+
+
+#banner{
+  width: 100%;
+  min-height: 50vh;
+  /* background-image:url("../img/fondo.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+
 
 .slider-frame{
     width: 1970px;

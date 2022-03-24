@@ -8,6 +8,7 @@ class Pets(models.Model):
     name = models.CharField(max_length=20)
     description = models.TextField()
     history = models.TextField()
+    state = models.CharField(max_length=50)
     slug = models.SlugField(null=False, blank=False, unique=True)
     image = models.ImageField(upload_to='pets', null=False, blank=False)
     image2 = models.ImageField(upload_to='pets', null=False, blank=False)

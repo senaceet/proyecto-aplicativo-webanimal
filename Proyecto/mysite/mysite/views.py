@@ -6,11 +6,9 @@ from django.contrib.auth.models import User
 from pets.models import Pets
 
 def index(request):
-    pets = Pets.objects.all().order_by('-id')
-
+    # pets = Pets.objects.all().order_by('-id')
     return render(request, 'index.html',{
-        'pets': pets, 
-        
+        # 'pets': pets,
     })
 
 def login_view(request):
@@ -52,7 +50,7 @@ def register(request):
             return redirect('index')
 
     return render(request, 'users/register.html', {
-        'form' : form 
+        'form' : form
     })
 
 def aboutUs(request):
@@ -76,3 +74,9 @@ def news(request):
         #context
     })
 
+def adopt(request):
+    pets = Pets.objects.all().order_by('-id')
+    return render(request, 'adopt.html',{
+        'pets': pets,
+        #context
+    })

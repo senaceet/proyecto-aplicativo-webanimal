@@ -6,7 +6,7 @@
     {% endif %}
 
     <div class="card-body">
-        <h5 class="card-name">{{ pets.name }}</h5>
+        <h5 class="card-name">{{ pets.name }}</h5> <p>{{pets.state}}</p>
         <a href="{% url 'pets' pets.slug %}" class="btn btn-primary">Ver más</a>
     </div>
 </div>

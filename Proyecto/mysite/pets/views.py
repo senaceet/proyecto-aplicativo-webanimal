@@ -5,8 +5,8 @@ from django.views.generic.detail import DetailView
 
 from .models import Pets
 
-class PetsListView(ListView): 
-    template_name = 'index.html'
+class PetsListView(ListView):
+    template_name = 'adopt.html'
     queryset = Pets.objects.all().order_by('-id')
 
     def get_context_data(self, **kwargs):

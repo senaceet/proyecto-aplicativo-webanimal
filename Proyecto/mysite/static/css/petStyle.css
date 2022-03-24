@@ -12,7 +12,13 @@ div.bg{
     border-radius: 10px;
     margin: 60px;
     padding: 60px 20px;
-}            
+}
+
+.h4{
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 20;
+}
 
 /* Menu */
 .menu{
@@ -22,7 +28,7 @@ div.bg{
     width: 90%;
     max-width: 1100px;
     margin:0.50em auto;
-    margin-top:20px;                              
+    margin-top:20px;
     margin-bottom: 25px;
 }
 
@@ -76,13 +82,13 @@ div.bg{
 @keyframes slide {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
-	
+
 	25% {margin-left: -100%;}
 	45% {margin-left: -100%;}
-	
+
 	50% {margin-left: -200%;}
 	70% {margin-left: -200%;}
-	
+
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
@@ -102,14 +108,14 @@ div.bg{
 
 .img_adopcion .adopcion-item{
     width: 22%;
-    margin-left: 3%;    
-    margin-top: 25px;    
+    margin-left: 3%;
+    margin-top: 25px;
 }
 
 .wrap{
     max-width: 1100px;
     width: 90%;
-    margin: auto; 
+    margin: auto;
 }
 
 .img_adopcion .adopcion-item a{

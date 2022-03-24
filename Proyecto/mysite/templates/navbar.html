@@ -5,6 +5,7 @@
 {% url 'contacts' as contacts %}
 {% url 'donation' as donation%}
 {% url 'news' as news %}
+{% url 'adopt' as adopt %}
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('../static/img/background-footer.svg'); border-radius: 3px; background-size: contain;">
     <a href="{{ index }}" class="navbar-brand" style="margin-left: 50px;">
@@ -42,6 +43,12 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ contacts }}">
                         <span class="fas fa-phone-alt"></span> Contáctanos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ adopt }}">
+                        <span class="fas fa-hand-holding-usd"></span>Adoptar
+                    </a>
                 </li>
             </ul>
 
