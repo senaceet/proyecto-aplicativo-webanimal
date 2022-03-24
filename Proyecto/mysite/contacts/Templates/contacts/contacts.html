@@ -10,8 +10,16 @@
 <!-- Bloque de Contenido de Templates -->
 {% block content %}
     <!-- Form -->
+    <div class="titulo">
+    <h2>Contactanos a traves de este formulario</h2>
+    </div>
+    <div class="todo">
+      <img id="imagencontactos" src="../static/img/Contactanos123.gif" class="img-fluid" alt="...">
+    </div>
+    <div class="recuadrocontactos">
     <form action="" method="post">
       {% csrf_token %}
+
 <div class="mb-3">
   {{ form.names | as_crispy_field }}
 </div>
@@ -32,20 +40,10 @@
   {% endfor %}
 {% endif %}
 <button type="submit" id="boton" class="btn btn-primary">Enviar</button>
-<div class="contact-info">
-<ul>
-  <li>
- <i id="icon" class="fa fa-phone">11111011101</i>
-  </li>
-  <div class="textico">
-    <div class="container">
-      <h1>My First Bootstrap Page</h1>
-      <p>This is some text.</p>
-    </div>
-</div>
-</ul>
+
 </div>
 </form>
+</div>
         <!-- <div class="foot">
             <div class="redes">
                 <span class="iconos" id="twitter"><a href="#"></a><i class="fab fa-twitter-square"></i></a></span>
