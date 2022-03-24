@@ -8,7 +8,7 @@
 #banner{
     width: 100%;
     min-height: 50vh;
-    background-image:url("../img/banner.jpg");
+    background-image:url("../img/tresGatos.jpg");
     background-size: cover;
     background-position: center;
 
@@ -21,18 +21,16 @@ h1 {
 
 #parrafo1{
     text-align: center;
-    color: white;
+    color:whitesmoke;
+    line-height: 50px;
+    font-size: 30px;
+    -webkit-text-stroke: 1.15pt black;
 }
 
 h2 {
        text-align: center;
        color: black;
    }
-
-#donar{
-    align-items:flex-end;
-
-}
 
 .borde{
     -webkit-text-stroke: 2px black;
@@ -42,14 +40,14 @@ h2 {
     width:170px;
     height:50px;
     background-image:url("../img/banner.jpg");
-    margin: 5px;
+    margin: 10px;
     padding:10px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     font-size:15px;
     line-height:32px;
-    float:left;
+    position:static;
     text-align: center;
   }
   #boton:hover{

@@ -12,17 +12,17 @@
             <div class="col">
                 <div style="margin-top: 35px;">
                     <h1 class="borde"><strong class="cur">Donaciones</strong><br>Ayuda a Nuestros Peluditos</h1>
-                        <p id="parrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p id="parrafo1">🐶 Nuestros medios oficiales de donacion 🐶<br>✔ Cuenta de Banco No. 9999999<br>✔ Daviplata No. 99999999<br>✔ Nequi No. 99999999</p>
                 </div>
             </div>
         </div>
-        <div class="botones">
-            <div class="row" id="boton">
+        <div class="row" style="margin-left: 450px;">
+            <div id="boton">
                 <div class="col">
                     <div class="button_section"><a class="main_bt" href="#">Donar con PayU</a></div>
                 </div>
             </div>
-            <div class="row" id="boton">
+            <div id="boton">
                 <div class="col">
                     <div class="button_section"><a class="main_bt" href="https://www.paypal.com/donate/?hosted_button_id=VC3URRVHB7EYU">Donar con Paypal</a></div>
                 </div>
@@ -66,24 +66,24 @@
 
 {% block content %}
 <div id="donar" style="background-color: grey;">
-    <div class="container">
+    <div class="container" style="margin-top:40px; align-items: center;">
+        <h2>Donar</h2>
         <div class="row">
-            <h2 style="margin-top:20px;">Donar</h2>
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d0A8C58A9">
-                <img class="" href="#" src="../static/img/dosPerros.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/dosPerros.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 20,000COP</p>
                 </a>
             </div>
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d38D84D50">
-                <img class="" href="#" src="../static/img/gatoGris.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/gatoGris.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 50,000COP</p>
                 </a>
             </div>
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d9068AE97">
-                <img class="" href="#" src="../static/img/huskys.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/huskys.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 100,000COP</p>
                 </a>
             </div>
@@ -91,30 +91,32 @@
         <div class="row">
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d11C00FAC">
-                <img class="" href="#" src="../static/img/niñaConejos.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/niñaConejos.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 300,000COP</p>
                 </a>
             </div>
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d9F4175D3">
-                <img class="" href="#" src="../static/img/perroNegro.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/perroNegro.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 800,000COP</p>
                 </a>
             </div>
             <div class="col">
                 <a href="https://biz.payulatam.com/L0ec44d3D71F48F">
-                <img class="" href="#" src="../static/img/niñoConejo.png" alt="#" style="width:45%; height:80%; margin-left:40px; margin-top:45px;"/>
+                <img class="" href="#" src="../static/img/niñoConejo.png" alt="#" style="width:45%; height:80%;"/>
                 <p>Donar 1'000,000COP</p>
                 </a>
             </div>
         </div>
     </div>
+    <h4 style="text-align: center; margin-top: 50px;">Donar con PayPal</h4>
+        <form action="https://www.paypal.com/donate" method="post" target="_top" style="text-align: center; margin-bottom: 50px;">
+            <input type="hidden" name="hosted_button_id" value="VC3URRVHB7EYU" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_CO/i/scr/pixel.gif" width="1" height="1" />
+        </form>
 </div>
-<!-- <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="hosted_button_id" value="VC3URRVHB7EYU" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-    <img alt="" border="0" src="https://www.paypal.com/en_CO/i/scr/pixel.gif" width="1" height="1" />
-</form> -->
+
     
 
 
