@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+#container1{
+    align-items: center;
+}
 #banner{
     width: 100%;
     min-height: 50vh;
@@ -19,6 +21,7 @@ h1 {
 
 #parrafo1{
     text-align: center;
+    color: white;
 }
 
 h2 {
@@ -30,6 +33,42 @@ h2 {
     align-items:flex-end;
 
 }
+
+.borde{
+    -webkit-text-stroke: 2px black;
+}
+
+#boton{
+    width:170px;
+    height:50px;
+    background-image:url("../img/banner.jpg");
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:15px;
+    line-height:32px;
+    float:left;
+    text-align: center;
+  }
+  #boton:hover{
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+  }
+  #boton a{
+    color:#fff;
+    text-decoration:none;
+    padding:5px 5px 5px 0;
+  }
+
+
+
+
+
+
+
 .controlsa {
     padding:10px;
     border-radius: 6px;
