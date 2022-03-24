@@ -1,15 +1,36 @@
 *{
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
-/* #container1{
-    align-items: center;
-}
-#banner{
-    width: 100%;
-    min-height: 50vh;
-    background-image:url("../img/señoragato.jpg");
-    background-size: cover;
-    background-position: center;
 
-}  */
+/* body{
+  display: flex;
+  min-height: 100vh;
+  background: #EFC076
+} */
+
+/* slider */
+.container-slider{
+
+}
+
+.slider{
+
+}
+
+.slider__section{
+
+}
+
+.slider__img{
+
+}
+
+.slider__btn{
+
+}
+
+.slider__btn:hover{
+
+}
+
+.slider__btn--left
