@@ -2,63 +2,37 @@
   box-sizing: border-box;
 }
 
-/* body{
-  display: flex;
-  min-height: 100vh;
-  background: #EFC076
-} */
-
-/* slider */
-.container-slider{
-  width: 90%;
-  max-width: 1500px;
-  margin: auto;
-  overflow: hidden;
-  box-shadow:  0 0 0 10px #fff, 
-              0 15px 50px;
-  position: relative;
+#container1{
+    align-items: center;
 }
 
+#banner{
+    width: 100%;
+    min-height: 50vh;
+    background-image:url("../img/gaticos.jpg");
+    background-size: cover;
+    background-position: center;
 
-.slider{
-  display: flex;
-  width: 400%;
-  height: 400px;
-}
+   }
 
-.slider__section{
- width: 100%;
-}
-
-.slider__img{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.slider__btn{
-  position:absolute;
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.7);
-  top:50%;
-  transform: translateY(-50%);
-  font-size:30px;
-  font-weight: bold;
-  font-family: monospace;
+h1 {
   text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
+  color: white;
 }
 
-.slider__btn:hover{
-
+#parrafo1{
+    text-align: center;
+    color:whitesmoke;
+    line-height: 50px;
+    font-size: 30px;
+    -webkit-text-stroke: 1.15pt black;
 }
 
-.slider__btn--left{
+h2 {
+       text-align: center;
+       color: black;
+   }
 
-}
-
-.slider__btn--rigth{
-  right: 10px;
+.borde{
+    -webkit-text-stroke: 2px black;
 }
