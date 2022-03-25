@@ -26,6 +26,7 @@ h1 {
     line-height: 50px;
     font-size: 30px;
     -webkit-text-stroke: 1.15pt black;
+    font-style: lora;
 }
 
 h2 {
