@@ -124,83 +124,8 @@
 
 /* main */
 .about-img img{
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
 
-}
-
-
-
-
-Features
-************************************/
-#feature{
-    background-color: rgb(247, 247, 247);
-}
-
-h1{
-    padding-bottom: 5px;
-}
-
-h2{
-	font-size: 24px;
-	padding-bottom: 15px;
-}
-.bottom-line{
-	width: 25px;
-	height: 3px;
-	background-color: rgb(99, 122, 145);
-}
-.fea1{
-	  margin-top: 25px;
-    margin-left: auto;
-    display: flex;
-}
-
-.fea2{
-	  margin-top: 25px;
-    margin-left: 100px;
-    display: flex;
-    position: relative;
-    left:200px;
-    margin-top: -190px;
-}
-
-.fea3{
-	  margin-top: 25px;
-    margin-left: 800px;
-    display: flex;
-    position: relative;
-    left: 10px;
-    margin-top: -190px;
-    border: 2px solid rgba(255, 0, 0, 0.5);
-    height: 300px;
-    width: 200px;
-}
-
-.fe3 p{
-  width: 300px;
-}
-
-.fea-img {
-  width: 20%;
-}
-.heading {
-    width: 80%;
-}
-.fea i {
-    font-size: 39px;
-    color: #5FCF80;
-    margin-top: 7px;
-}
-.heading h4 {
-    font-size: 17px;
-    line-height: 1.25;
-    font-weight: 700;
-    color: #000;
-    margin: 10px 0px;
-    text-align: left;
-}
-.heading p {
-  text-align: left;
 }
