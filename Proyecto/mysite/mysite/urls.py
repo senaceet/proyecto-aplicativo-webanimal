@@ -20,9 +20,9 @@ from django.urls import include
 from django.conf.urls.static import static
 from django.conf import settings
 # from mysite.pets.views import PetsListView
+from pets.views import PetsListView
 from . import views
 
-from pets.views import PetsListView
 
 urlpatterns = [
     path('', views.index, name='index'),
