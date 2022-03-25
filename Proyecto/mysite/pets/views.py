@@ -1,11 +1,13 @@
 from django.shortcuts import render
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
 from .models import Pets
 
-class PetsListView(ListView):
+
+class PetsListView(LoginRequiredMixin, ListView):
+    login_url = 'login'
     template_name = 'adopt.html'
     queryset = Pets.objects.all().order_by('-id')
 
