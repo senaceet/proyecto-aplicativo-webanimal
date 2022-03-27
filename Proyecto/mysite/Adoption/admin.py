@@ -5,3 +5,6 @@ from .models import Adoption
 
 class AdoptionAdmin(admin.ModelAdmin):
     list_display = ('__str__', 'created_at')
+
+
+admin.site.register(Adoption, AdoptionAdmin)
