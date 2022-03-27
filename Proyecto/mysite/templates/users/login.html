@@ -26,6 +26,7 @@
                 <h2>Inicio de Sesión</h2>
 
                 <!-- Formilario Inicio Sesión -->
+                <div class="formulariolog">
                 <form method="post">
                     {% csrf_token %}
                     <div class="form-group">
@@ -45,6 +46,7 @@
                         <a href="{% url 'register' %}" class="link-primary">Crear una</a>
                     </p>
                 </form>
+            </div>
             </div>
         </div>
     </div>
