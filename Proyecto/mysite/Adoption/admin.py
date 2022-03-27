@@ -3,4 +3,5 @@ from .models import Adoption
 
 # Register your models here.
 
-admin.site.register(Adoption)
+class AdoptionAdmin(admin.ModelAdmin):
+    list_display = ('__str__', 'created_at')
