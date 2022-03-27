@@ -35,3 +35,4 @@ def set_slug(sender, instance, *args, **kwargs):
         instance.slug = slug
 
 pre_save.connect(set_slug, sender=Pets)
+
