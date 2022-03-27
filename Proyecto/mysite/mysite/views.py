@@ -5,6 +5,7 @@ from .forms import RegisterForm
 from django.contrib.auth.models import User
 from pets.models import Pets
 
+
 def index(request):
     # pets = Pets.objects.all().order_by('-id')
     return render(request, 'index.html',{
@@ -80,3 +81,4 @@ def adopt(request):
         'pets': pets,
         #context
     })
+

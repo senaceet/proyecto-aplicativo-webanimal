@@ -112,6 +112,17 @@ USE_I18N = True
 
 USE_TZ = True
 
+import os
+from decouple import config
+
+EMAIL_BACKEND = 'django.db.models.BigAutofield'
+EMAIL_HOST = 'smpt.googlemail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sebatan4@gmail.com'
+EMAIL_HOST_PASSWORD = 'okncjkjxvibqsunj' 
+EMAIL_USE_TLS = True
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 

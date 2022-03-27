@@ -24,8 +24,9 @@ class AdoptionForm(forms.Form):
         'placeholder' : 'Telefono',
         'style': 'margin-bottom: 20px',
     }))
-    Correo= forms.EmailField(required=True, max_length=20,
+    Correo= forms.EmailField(required=True, max_length=70,
     widget=forms.TextInput(attrs={
+        'name': 'Correo',
         'class' : 'form-control',
         'id' : 'Correo',
         'placeholder' : 'Correo',
@@ -88,6 +89,8 @@ class AdoptionForm(forms.Form):
     #     'placeholder' : 'Correo',
     #     'style': 'margin-bottom: 10px',
     # }))
+
+    
 
     def save(self):
         return Adoption.objects.create(

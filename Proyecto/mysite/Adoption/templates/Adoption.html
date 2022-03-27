@@ -9,7 +9,7 @@
 {% block content %}
     <!-- Formulario -->
     <!-- {{ form }} -->
-    <form action="" method="post">
+    <form action="" method="post" action="{% url 'Adoption'%}">
         {% csrf_token %}
   <div class="mb-3">
     {{ form.Nombres | as_crispy_field }}
@@ -20,7 +20,7 @@
   <div class="mb-3">
     {{ form.number | as_crispy_field }}
   </div>
-  <div class="mb-3">
+  <div class="mb-3" >
     {{ form.Correo | as_crispy_field}}
   </div>
   <div class="mb-3">
