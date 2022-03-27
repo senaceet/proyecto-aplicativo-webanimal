@@ -37,6 +37,7 @@ urlpatterns = [
     path('news/', views.news, name='news'),
     path('adopt/', PetsListView.as_view(), name='adopt'),
     path('mascotas/', include('pets.urls')),
+    path('Adoption/', include('Adoption.urls')),
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/css/Adoption.css">
+<title>Formulario De Adopcion</title>
+{% endblock %}
+
+{% block content %}
+    <!-- Formulario -->
+    <!-- {{ form }} -->
+    <form action="" method="post">
+        {% csrf_token %}
+  <div class="mb-3">
+    {{ form.Nombres | as_crispy_field }}
+  </div>
+  <div class="mb-3">
+    {{ form.Apellidos | as_crispy_field }}
+  </div>
+  <div class="mb-3">
+    {{ form.number | as_crispy_field }}
+  </div>
+  <div class="mb-3">
+    {{ form.Correo | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.Direccion | as_crispy_field }}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta1 | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta2 | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta3 | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta4 | as_crispy_field}}
+  </div>
+  <div class="mb-3">
+    {{ form.pregunta5 | as_crispy_field}}
+  </div>
+  
+  {% if messages %}
+    {% for msg in messages %}
+    <div class="alert alert-success">
+      <strong>{{ msg }}</strong>
+    </div>
+    {% endfor %}
+  {% endif %}
+  <button type="submit" id="boton" class="btn btn-primary">Enviar</button>
+  <div class="contact-info">
+  <!-- <ul>
+    <li>
+   <i id="icon" class="fa fa-phone">11111011101</i>
+    </li>
+    <div class="textico">
+      <div class="container">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+      </div>
+  </div>
+  </ul> -->
+  </div>
+  </form>
+{% endblock %}
