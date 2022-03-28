@@ -1,50 +1,194 @@
 [
 {
     "model": "pets.pets",
-    "pk": 7,
+    "pk": 1,
     "fields": {
         "name": "Natasha",
-        "description": "Edad: \r\nColor: \r\nTamaño: \r\nGenero:",
-        "history": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+        "description": "Edad: 1 a�o / Genero: Hembra / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "state": "En proceso de adopci�n",
         "slug": "natasha",
-        "image": "pets/pexels-kraken-images-5427090_X3YpjGk.jpg",
-        "created_at": "2022-03-16T00:28:25.742Z"
+        "image": "pets/pexels-evg-kowalievska-1170986.jpg",
+        "image2": "pets/pexels-pixabay-209037_9Esq55E.jpg",
+        "image3": "pets/pexels-lina-kivaka-1741205_xhrBiad.jpg",
+        "image4": "pets/pexels-bruno-scramgnon-596135.jpg",
+        "created_at": "2022-03-27T20:08:50.295Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 2,
+    "fields": {
+        "name": "Bruno",
+        "description": "Edad: 1 a�o / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "state": "Disponible para adopci�n",
+        "slug": "bruno",
+        "image": "pets/pexels-pixabay-220938_LIbrtif.jpg",
+        "image2": "pets/pexels-kat-smith-551628_Q3Nxr7H.jpg",
+        "image3": "pets/pexels-alotrobo-3523317_eiSOyUr.jpg",
+        "image4": "pets/pexels-marino-c-6052895.jpg",
+        "created_at": "2022-03-28T12:01:52.464Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 3,
+    "fields": {
+        "name": "Laika",
+        "description": "Edad: 11 meses / Genero: Hembra / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "state": "Disponible para adopci�n",
+        "slug": "laika",
+        "image": "pets/pexels-inge-wallumr�d-177809_ld4XX5Q.jpg",
+        "image2": "pets/pexels-sandi-savage-978205.jpg",
+        "image3": "pets/pexels-ikbal-alahmad-9181117.jpg",
+        "image4": "pets/pexels-clicks-3054570_kulKJjc.jpg",
+        "created_at": "2022-03-28T12:08:32.329Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 4,
+    "fields": {
+        "name": "Toby",
+        "description": "Edad: 1 a�o y medio / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "state": "En proceso de adopci�n",
+        "slug": "toby",
+        "image": "pets/pexels-steshka-willems-1289905.jpg",
+        "image2": "pets/pexels-viktoria-b-1078090_BFRJ26Y.jpg",
+        "image3": "pets/pexels-alexandru-rotariu-733416.jpg",
+        "image4": "pets/pexels-jack-redgate-3013987.jpg",
+        "created_at": "2022-03-28T12:22:44.973Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 5,
+    "fields": {
+        "name": "Principe",
+        "description": "Edad: 2 meses / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "state": "Disponible para adopci�n",
+        "slug": "principe",
+        "image": "pets/pexels-peng-louis-1643457_Zg5akLA.jpg",
+        "image2": "pets/pexels-pixabay-45201_BO3s93g.jpg",
+        "image3": "pets/pexels-pixabay-416160.jpg",
+        "image4": "pets/pexels-francesco-ungaro-96938.jpg",
+        "created_at": "2022-03-28T12:27:23.054Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 6,
+    "fields": {
+        "name": "Mia",
+        "description": "Edad: 9 meses / Genero: Hembra / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.",
+        "state": "Disponible para adopci�n",
+        "slug": "mia",
+        "image": "pets/pexels-putra-arin-wiratama-1234083.jpg",
+        "image2": "pets/pexels-kelly-l-3030345.jpg",
+        "image3": "pets/pexels-dzenina-lukac-1469484.jpg",
+        "image4": "pets/pexels-dzenina-lukac-1469897_o2u7RM8.jpg",
+        "created_at": "2022-03-28T12:31:25.864Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 7,
+    "fields": {
+        "name": "Otis",
+        "description": "Edad: 1 a�o y medio / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "state": "En proceso de adopci�n",
+        "slug": "otis",
+        "image": "pets/pexels-tomas-anunziata-925848.jpg",
+        "image2": "pets/pexels-yare-hdz-4180805.jpg",
+        "image3": "pets/pexels-jonathan-meyer-752383.jpg",
+        "image4": "pets/pexels-helena-lopes-3215456.jpg",
+        "created_at": "2022-03-28T12:37:18.389Z"
     }
 },
 {
     "model": "pets.pets",
     "pk": 8,
     "fields": {
-        "name": "Nezuko",
-        "description": "Edad: \r\nGenero: \r\nColor: \r\nTamaño:",
-        "history": "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).",
-        "slug": "nezuko",
-        "image": "pets/pexels-feyza-yıldırım-9457068_9YNQ3tO.jpg",
-        "created_at": "2022-03-16T00:28:58.459Z"
+        "name": "Bartolomeo",
+        "description": "Edad: 1 a�o / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "state": "Disponible para adopci�n",
+        "slug": "bartolomeo",
+        "image": "pets/pexels-engin-akyurt-1571724.jpg",
+        "image2": "pets/pexels-nana-photography-5597096.jpg",
+        "image3": "pets/pexels-ioan-nan-4054351.jpg",
+        "image4": "pets/pexels-nana-photography-5597096_1.jpg",
+        "created_at": "2022-03-28T12:41:51.774Z"
     }
 },
 {
     "model": "pets.pets",
     "pk": 9,
     "fields": {
-        "name": "Bruno",
-        "description": "Edad:\r\nTamaño:\r\nGenero: \r\nColor:",
-        "history": "Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.",
-        "slug": "bruno",
-        "image": "pets/pexels-charles-a-pickup-10895150_OmkS6t7.jpg",
-        "created_at": "2022-03-16T00:29:49.833Z"
+        "name": "Thalia",
+        "description": "Edad: 1 a�o / Genero: Hembra / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "state": "Disponible para adopci�n",
+        "slug": "thalia",
+        "image": "pets/pexels-pixabay-97082.jpg",
+        "image2": "pets/pexels-karolina-grabowska-4749999.jpg",
+        "image3": "pets/pexels-carlos-jairo-6332841.jpg",
+        "image4": "pets/pexels-alexandru-rotariu-733416_M1jslRV.jpg",
+        "created_at": "2022-03-28T12:49:09.376Z"
     }
 },
 {
     "model": "pets.pets",
     "pk": 10,
     "fields": {
+        "name": "Brauler",
+        "description": "Edad: 5 meses / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "state": "Disponible para adopci�n",
+        "slug": "brauler",
+        "image": "pets/pexels-goochie-poochie-grooming-3361722.jpg",
+        "image2": "pets/pexels-krisp-cut-1383388.jpg",
+        "image3": "pets/pexels-andrew-doucette-899977.jpg",
+        "image4": "pets/pexels-josh-sorenson-1750377.jpg",
+        "created_at": "2022-03-28T12:54:06.651Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 11,
+    "fields": {
+        "name": "Leo",
+        "description": "Edad: 5 meses / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "state": "En proceso de adopci�n",
+        "slug": "leo",
+        "image": "pets/275207441_519239992986658_1758967755111661602_n.jpg",
+        "image2": "pets/275286705_519240046319986_7779344638935528513_n.jpg",
+        "image3": "pets/275145827_519240099653314_2406245294003520034_n.jpg",
+        "image4": "pets/275130551_519240216319969_2140686049481339137_n.jpg",
+        "created_at": "2022-03-28T13:04:58.468Z"
+    }
+},
+{
+    "model": "pets.pets",
+    "pk": 12,
+    "fields": {
         "name": "Juanito",
-        "description": "Edad: \r\nColor: \r\nTamaño:",
-        "history": "Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de \"de Finnibus Bonorum et Malorum\" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", viene de una linea en la sección 1.10.32",
+        "description": "Edad:  8 meses  / Genero: Macho / Vacunas: Esquema de vacunaci�n completo / Estado de salud: Bueno",
+        "history": "Nullam in ex sed libero condimentum vestibulum. Duis mauris ipsum, accumsan vitae lorem sit amet, faucibus bibendum nunc. Quisque et erat sed erat posuere placerat in a tortor. Vivamus quis dictum velit. Praesent in turpis id felis scelerisque commodo dictum gravida odio. Nulla dapibus convallis libero quis porta. Nam malesuada a orci ut feugiat. Aenean accumsan fringilla tellus, quis maximus nisi convallis a. Ut sollicitudin leo vitae est sodales, vitae lacinia dui aliquam. Aliquam vel fermentum nibh. Nunc sem magna, placerat vel venenatis non, eleifend at est.",
+        "state": "Disponible para adopci�n",
         "slug": "juanito",
-        "image": "pets/pexels-ioandaniel-plesa-10954791_xygPKW0.jpg",
-        "created_at": "2022-03-16T00:30:32.502Z"
+        "image": "pets/pexels-north-1287830.jpg",
+        "image2": "pets/pexels-hilary-halliwell-1031466.jpg",
+        "image3": "pets/pexels-alan-quirv�n-3969714.jpg",
+        "image4": "pets/pexels-son-pham-1464518.jpg",
+        "created_at": "2022-03-28T13:43:24.921Z"
     }
 }
 ]

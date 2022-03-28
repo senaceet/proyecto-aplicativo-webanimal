@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import os 
+import os
 from pathlib import Path
 import mysite.db as db
 
@@ -112,14 +112,14 @@ USE_I18N = True
 
 USE_TZ = True
 
-import os
-from decouple import config
+# import os
+# from decouple import config
 
 EMAIL_BACKEND = 'django.db.models.BigAutofield'
 EMAIL_HOST = 'smpt.googlemail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sebatan4@gmail.com'
-EMAIL_HOST_PASSWORD = 'okncjkjxvibqsunj' 
+EMAIL_HOST_PASSWORD = 'okncjkjxvibqsunj'
 EMAIL_USE_TLS = True
 
 
@@ -140,7 +140,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Cambiar ruta de STATIC_ROOT 
-# STATIC_ROOT = '/static/' 
-
-
+# Cambiar ruta de STATIC_ROOT
+# STATIC_ROOT = '/static/'
