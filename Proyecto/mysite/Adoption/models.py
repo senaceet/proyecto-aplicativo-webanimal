@@ -13,6 +13,7 @@ class Adoption(models.Model):
     pregunta3 = models.TextField(verbose_name="pregunta", max_length=100)
     pregunta4 = models.TextField(verbose_name="pregunta", max_length=100)
     pregunta5 = models.TextField(verbose_name="pregunta", max_length=100)
+    state = models.CharField(verbose_name="estado", max_length=20)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

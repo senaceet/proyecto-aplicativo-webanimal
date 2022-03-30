@@ -19,7 +19,7 @@ def frmAdoption(request):
         user = form.save()
 
         if user:
-            messages.success(request, "Asunto enviado exitosamente,revisa tu correo")
+            messages.success(request, "Asunto enviado exitosamente, te estaremos contactando!!")
             return redirect('Adoption')
 
     return render(request, 'Adoption.html',{
